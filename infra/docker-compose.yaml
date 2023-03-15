@@ -3,7 +3,7 @@ services:
  web:
   image: nginx
   volumes:
-   - /mnt/c/junk/hello-world-vue/dist:/usr/share/nginx/html
+   - /var/www/hello-world-vue:/usr/share/nginx/html
   restart: always
   build: .
   ports:
